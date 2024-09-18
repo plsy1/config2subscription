@@ -51,8 +51,9 @@ def main(path):
         if config["type"] == 'trojan':
             tj = generate_trojan_link(config)
             res += tj + '\n'
+    
     print(base64_encode(res))
-
+    print(res)
 if __name__ == "__main__":
-    path = "link.txt" 
+    path = "raw.txt" 
     main(path)
